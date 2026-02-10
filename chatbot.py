@@ -8,11 +8,11 @@ load_dotenv()
 
 # streamlit page setup
 st.set_page_config(
-    page_title="Chatbot",
+    page_title="Chatbot Demo",
     page_icon="🤖",
     layout="centered",
 )
-st.title("💬 Generative AI Chatbot")
+st.title("💬 Generative AI Chatbot : Ask Your Question")
 
 # initiate chat history
 if "chat_history" not in st.session_state:
