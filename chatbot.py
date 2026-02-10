@@ -12,7 +12,7 @@ st.set_page_config(
     page_icon="🤖",
     layout="centered",
 )
-st.title("💬 Generative AI Chatbot : Ask Your Question")
+st.title("🤔 What Are You Thinking?")
 
 # initiate chat history
 if "chat_history" not in st.session_state:
@@ -30,7 +30,7 @@ llm = ChatGroq(
 )
 
 # input box
-user_prompt = st.chat_input("Ask Chatbot...")
+user_prompt = st.chat_input("Your AI assistant is listening. Type your question here...")
 
 if user_prompt:
     st.chat_message("user").markdown(user_prompt)
